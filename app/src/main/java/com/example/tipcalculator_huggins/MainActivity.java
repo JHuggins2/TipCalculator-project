@@ -10,6 +10,7 @@ import android.widget.RadioButton;
 public class MainActivity extends AppCompatActivity {
 
     private EditText editTextTip;
+    private float tipPercent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,16 +28,17 @@ public class MainActivity extends AppCompatActivity {
         // Check which radio button was clicked
         switch(view.getId()) {
             case R.id.radioButton20:
-                // save this
+                tipPercent = 0.20f;
                 break;
             case R.id.radioButton15:
-                // save this
+                tipPercent = 0.15f;
                 break;
             case R.id.radioButton10:
-                // save this
+                tipPercent = 0.1f;
                 break;
             case R.id.radioButtonCustom:
                 if(checked){ editTextTip.setEnabled(true); }
+                tipPercent = -1; // set to -1 to show that need to pull value from editTextTip
                 break;
             default:
                 editTextTip.setEnabled(false);
