@@ -26,6 +26,15 @@ public class MainActivity extends AppCompatActivity {
 
         // Check which radio button was clicked
         switch(view.getId()) {
+            case R.id.radioButton20:
+                // save this
+                break;
+            case R.id.radioButton15:
+                // save this
+                break;
+            case R.id.radioButton10:
+                // save this
+                break;
             case R.id.radioButtonCustom:
                 if(checked){ editTextTip.setEnabled(true); }
                 break;
