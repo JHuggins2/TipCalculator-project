@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 
@@ -11,6 +12,12 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText editTextTip;
     private float tipPercent;
+    private Button buttonCalculate;
+
+    private boolean validPeople;
+    private boolean validTotal;
+    private boolean validTip;
+    private boolean customTip;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         editTextTip = findViewById(R.id.editTextTip);
+        buttonCalculate = findViewById(R.id.buttonCalculate);
     }
 
     public void onRadioButtonClicked(View view) {
@@ -38,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.radioButtonCustom:
                 if(checked){ editTextTip.setEnabled(true); }
-                tipPercent = -1; // set to -1 to show that need to pull value from editTextTip
+                customTip = true;
                 break;
             default:
                 editTextTip.setEnabled(false);
