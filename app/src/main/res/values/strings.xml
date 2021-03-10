@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">TipCalculator-Huggins</string>
+    <string name="totalAmountKey">totalAmountKey</string>
+    <string name="totalTipKey">totalTipKey</string>
+    <string name="totalPeopleKey">totalPeopleKey</string>
+    <string name="bundleBillKey">bundleBillKey</string>
+    <string name="bundleTipKey">bundleTipKey</string>
+    <string name="bundlePeopleKey">bundlePeopleKey</string>
+    <string name="bundleTipChoiceKey">bundleTipChoiceKey</string>
+    <string name="bundleValidPeopleKey">bundleValidPeopleKey</string>
+    <string name="bundleValidBillKey">bundleValidBillKey</string>
+    <string name="bundleValidTipKey">bundleValidTipKey</string>
+    <string name="bundleCustomTipKey">bundleCustomTipKey</string>
 </resources>
