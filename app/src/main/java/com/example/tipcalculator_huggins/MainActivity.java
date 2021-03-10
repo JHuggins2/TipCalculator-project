@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
                     try{ bill = Float.parseFloat(editTextBill.getText().toString()); }
                     catch (NumberFormatException e){ bill = -1; }
                     if(bill < 1 && bill != -1){
-                        showErrorAlert("Invalid Bill", editTextBill.getId());
+                        showErrorAlert(getString(R.string.invalidBill), editTextBill.getId());
                         editTextBill.setText("");
                         validBill = false;
                     } else{ validBill = true; }
@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
                     try{ numPeople = Integer.parseInt(editTextPeople.getText().toString()); }
                     catch (NumberFormatException e){ numPeople = -1; }
                     if(numPeople < 1 && numPeople != -1){
-                        showErrorAlert("Invalid Number of People", editTextPeople.getId());
+                        showErrorAlert(getString(R.string.invalidPeople), editTextPeople.getId());
                         editTextPeople.setText("");
                         validPeople = false;
                     } else{ validPeople = true; }
@@ -127,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
                     try{ tipPercent = Float.parseFloat(editTextTip.getText().toString()); }
                     catch (NumberFormatException e){ tipPercent = -1; }
                     if(tipPercent < 1 && tipPercent != -1){
-                        showErrorAlert("Invalid Tip Amount", editTextTip.getId());
+                        showErrorAlert(getString(R.string.invalidTip), editTextTip.getId());
                         editTextTip.setText("");
                         validTip = false;
                     } else{ validTip = true; }
@@ -149,9 +149,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void showErrorAlert(String errorMessage, final int fieldId) {
         new AlertDialog.Builder(this)
-                .setTitle("Error")
+                .setTitle(getString(R.string.errorStr))
                 .setMessage(errorMessage)
-                .setNeutralButton("Close",
+                .setNeutralButton(getString(R.string.closeStr),
                         new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog,

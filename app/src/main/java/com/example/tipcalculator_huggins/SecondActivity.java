@@ -42,11 +42,7 @@ public class SecondActivity extends AppCompatActivity {
         buttonReturn = findViewById(R.id.buttonReturn);
 
         buttonReturn.setOnClickListener(new View.OnClickListener() {
-            /**
-             * Called when a view has been clicked.
-             *
-             * @param v The view that was clicked.
-             */
+
             @Override
             public void onClick(View v) {
                 finish();

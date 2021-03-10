@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="secondTextSize">30sp</dimen>
+    <dimen name="personTxtWidth">133dp</dimen>
+    <dimen name="personTxtHeight">85dp</dimen>
+    <dimen name="radioButtonW">110dp</dimen>
+    <dimen name="radioButtonH">40dp</dimen>
+    <dimen name="customTipW">72dp</dimen>
+    <dimen name="customTipH">51dp</dimen>
+    <dimen name="radioGroupW">124dp</dimen>
+    <dimen name="radioGroupH">155dp</dimen>
+</resources>

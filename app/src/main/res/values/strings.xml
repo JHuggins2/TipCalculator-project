@@ -11,4 +11,22 @@
     <string name="bundleValidBillKey">bundleValidBillKey</string>
     <string name="bundleValidTipKey">bundleValidTipKey</string>
     <string name="bundleCustomTipKey">bundleCustomTipKey</string>
+    <string name="calculate">Calculate</string>
+    <string name="number_of_people">Number of People:</string>
+    <string name="total_bill">Total Bill:</string>
+    <string name="_20_tip">20% Tip</string>
+    <string name="_15_tip">15% Tip</string>
+    <string name="_10_tip">10% Tip</string>
+    <string name="custom_tip">Custom Tip:</string>
+    <string name="reset">Reset</string>
+    <string name="textview">Default</string>
+    <string name="total">Total:</string>
+    <string name="tip">Tip:</string>
+    <string name="total_per_nperson">Total Per Person:</string>
+    <string name="return_txt">Return</string>
+    <string name="invalidBill">Invalid Bill Amount</string>
+    <string name="invalidPeople">Invalid Number of People</string>
+    <string name="invalidTip">Invalid Tip Amount</string>
+    <string name="closeStr">Close</string>
+    <string name="errorStr">Error</string>
 </resources>
